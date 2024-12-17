@@ -1,6 +1,6 @@
 [Pffft](https://bitbucket.org/jpommier/pffft/) bindings for [Odin](https://odin-lang.org/).
 
-Example:
+### Example:
 
 ```odin
 
@@ -20,4 +20,10 @@ pffft.transform_ordered(
     pffft.Direction.FORWARD
 )
 
+```
+
+### Building pffft on MacOS:
+```sh
+clang pffft.c pffft.h -c -O2 -Os -fPIC
+ar rcs pffft.a pffft.o
 ```
