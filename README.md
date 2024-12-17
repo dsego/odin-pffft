@@ -1,4 +1,4 @@
-[Pffft](https://bitbucket.org/jpommier/pffft/) bindings for [Odin](https://odin-lang.org/).
+[PFFFT, a pretty fast Fourier Transform](https://bitbucket.org/jpommier/pffft/) bindings for [Odin](https://odin-lang.org/).
 
 ### Example:
 
