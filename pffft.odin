@@ -1,7 +1,7 @@
 package pffft
 
 
-when ODIN_OS == .Darwin {
+when ODIN_OS == .Darwin || ODIN_OS == .Linux {
 	// Building pffft on MacOS:
 	//    clang pffft.c pffft.h -c -O2 -Os -fPIC
 	//    ar rcs pffft.a pffft.o
