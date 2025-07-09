@@ -22,7 +22,7 @@ pffft.transform_ordered(
 
 ```
 
-### Building pffft on MacOS:
+### Building pffft on MacOS/Linux:
 ```sh
 clang pffft.c pffft.h -c -O2 -Os -fPIC
 ar rcs pffft.a pffft.o
