@@ -4,12 +4,14 @@
 
 ```odin
 
+import "core:c"
 import "./odin-pffft"
 
 fft: []complex64
 samples: []f32
 
-pffft_setup := pffft.new_setup(fft_size, pffft.Transform.REAL)
+pffft_setup := pffft.new_setup(c.int(fft_size), pffft.Transform.REAL)
+assert(pffft_setup != nil) // fft_size a multiple of 32, factors of 2, 3 and 5 only
 defer pffft.destroy_setup(pffft_setup)
 
 pffft.transform_ordered(
